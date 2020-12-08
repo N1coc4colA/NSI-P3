@@ -1,0 +1,46 @@
+ <!doctype html>
+ <html lang="fr">
+     <head>
+         <link rel="stylesheet" href= "styleform.css">
+         <meta charset="utf-8">
+         <title>Le formulaire pour pendu</title>
+     </head>
+     <body>
+         <form action="http://localhost:5000/resultat" method="get">
+                 
+                <div>
+                     <label id="labelmot">Mot à enregistrer dans la base :</label> <br>
+                     <input type="text" name="mot" />
+                </div>
+                
+                <div>
+                 
+                     <label>Difficulté</label> :
+                 
+                    <div>
+                          <input type="checkbox" id="facile" name="difficulte" value="1"/>
+                          <label for="facile">Facile</label>
+                    </div>
+    
+                    <div>
+                          <input type="checkbox" id="moyen" name="difficulte" value="2"/>
+                          <label for="moyen">Moyen</label>
+                    </div>
+    
+                </div>
+                         
+                <div>
+                    <input type="checkbox" id="difficile" name="difficulte" value="3"/>
+                    <label for="difficile">Difficile</label>
+                         
+                     
+                <label>Lettre d'aide</label> :
+                 
+                 <label>rang de la première lettre d'aide</label> : <input type="text" name="lettre1"/> <br>
+                 
+                 <label>rang de la deuxième lettre d'aide</label> : <input type="text" name="lettre2"/> <br>
+                 
+                 <input type="submit" value="Envoyer" />
+         </form>
+     </body>
+ </html>
