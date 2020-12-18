@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+     <head>
+         <!---<link rel="stylesheet" href={{ url_for("static", filename="styleform.css")}}>--->
+         <meta charset="utf-8">
+         <title>Ouvrir un fichier</title>
+     </head>
+
+    <body>
+        <form action="/form" method="post">
+                <div>
+                     <label id="filePath">Saisissez le chemin (complet) du fichier à ouvrir</label>
+                     <input type="text" name="fp"/>
+                </div>
+                 <input type="submit" value="Ouvrir"/>
+        </form>
+        <div id="errorContainer">
+            <p>{{errorType}}</p>
+        </div>
+    </body>
+</html>
