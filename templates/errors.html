@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fr">
+     <head>
+         <link rel="stylesheet" href={{ url_for("static", filename="styleform.css")}}>
+         <meta charset="utf-8">
+         <title>Erreur</title>
+     </head>    
+     <body>
+         <p>Une <strong>erreur</strong> s'est produite:</p>
+         <p>{{error_string}}</p>
+         <input action="action" onclick="{{redirection|safe}}" type="submit" value="Retour" />
+     </body>
+</html>
